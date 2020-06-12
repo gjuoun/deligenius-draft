@@ -60,7 +60,20 @@ class Content extends React.Component {
           mollis felis. Pellentesque id imperdiet nunc, at accumsan mi. Nam ac
           nisl et elit viverra posuere. Proin efficitur sodales enim at
           tincidunt.
-          <br />
+          <h2
+            className="is-size-1"
+            id="plugins"
+            style={{ position: "relative" }}
+          >
+            <span>Documentation</span>
+            <a
+              className=""
+              style={{ position: "absolute", right: "calc(100% + 1rem)" }}
+              href="#plugins"
+            >
+              #
+            </a>
+          </h2>
           <br />
           In sagittis scelerisque elit, eu porta mi facilisis ac. Mauris vel
           ultricies orci. Orci varius natoque penatibus et magnis dis parturient
