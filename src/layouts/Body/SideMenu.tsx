@@ -32,8 +32,9 @@ class Menu extends React.Component {
     this.state = { list: list };
     // this.handleClickMenu = this.handleClickMenu.bind(this)
   }
+
   handleClickMenu(label: string) {
-    let newList = list.map((item) => {
+    let newList = list.forEach((item) => {
       if (item.label === label) {
         item.toggle = !item.toggle;
       }
@@ -54,7 +55,7 @@ class Menu extends React.Component {
 
             return (
               <li key={subItem.label}>
-                <a className={active ? "is-active" : ""}>{subItem.label}</a>
+                <a className={active ? "is-active" : ""} href={`/${hashLabel}`}>{subItem.label}</a>
               </li>
             );
           })}
@@ -74,7 +75,7 @@ class Menu extends React.Component {
 
             return (
               <li key={label}>
-                <a onClick={this.handleClickMenu.bind(this, label)}>
+                <a onClick={this.handleClickMenu.bind(this, label)} >
                   <span>{label}</span>
                   <span className="icon">
                     <i

@@ -8,7 +8,7 @@ class Body extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="column is-one-fifth mr-6 ml-4">
+            <div className="column is-one-fifth mr-6">
               <Menu />
             </div>
             <div className="column">

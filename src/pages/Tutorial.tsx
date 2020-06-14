@@ -1,16 +1,15 @@
 import React from "react";
-import styled from "styled-components";
-import Header from './layouts/Header'
-import Body from './layouts/Body/index'
-import Footer from './layouts/Footer'
+
+import Header from '../layouts/Header'
+import Body from '../layouts/Body/index'
+import Footer from '../layouts/Footer'
 
 interface State {
   age: number;
 }
 
 
-
-class App extends React.Component<{}, State> {
+class Tutorial extends React.Component<{}, State> {
   // state: State
   // props: Props
 
@@ -18,6 +17,7 @@ class App extends React.Component<{}, State> {
     return (
       <div>
         <Header/>
+        <h2>Tutorial</h2>
         <Body></Body>
         <Footer></Footer>
       </div>
@@ -25,4 +25,4 @@ class App extends React.Component<{}, State> {
   }
 }
 
-export default App;
+export default Tutorial;

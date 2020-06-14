@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
@@ -42,11 +43,21 @@ class Header extends React.Component {
           </a>
         </div>
 
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div id="navbarBasicExample" className="navbar-menu is-active">
           <div className="navbar-start">
-            <a className="navbar-item active">📄 Docs</a>
+            <Link to="/docs" className="navbar-item active">
+              <span role="img" aria-label="Page Facing Up">
+                📄
+              </span>{" "}
+              Docs
+            </Link>
 
-            <a className="navbar-item">📖 Tutorial</a>
+            <Link to="/tutorial" className="navbar-item">
+              <span role="img" aria-label="Book">
+                📖
+              </span>{" "}
+              Tutorial
+            </Link>
           </div>
 
           <div className="navbar-end">
